@@ -35,7 +35,7 @@ y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Model accuracy: {accuracy * 100:.2f}%')
 
-with open('malaria.model.plk', 'wb') as f:
+with open('malaria.model.pkl', 'wb') as f:
     pickle.dump(model, f) #saves the trained ai doctor
 
 with open('scaler.pkl', 'wb') as f:
